@@ -17,6 +17,6 @@ rl.question("Ingrese su edad: ", function(input) {
       console.log("Usted es menor de edad.");
     }
   }
-
+   console.log("Presione cualquier tecla para salir.");
   rl.close();
 });
