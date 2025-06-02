@@ -17,6 +17,6 @@ rl.question("Ingrese un número: ", function(input) {
       console.log("El número " + numero + " es IMPAR.");
     }
   }
-
+console.log("Gracias por utilizar el programa");
   rl.close();
 });
