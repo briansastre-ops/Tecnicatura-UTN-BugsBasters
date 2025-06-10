@@ -1,0 +1,552 @@
+/* Reset básico para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables globales de colores y estilos */
+:root {
+    --primary-color: #6366f1; /* Color primario */
+    --secondary-color: #8b5cf6; /* Color secundario */
+    --accent-color: #06b6d4; /* Color de acento */
+    --text-primary: #1f2937; /* Color de texto principal */
+    --text-secondary: #6b7280; /* Color de texto secundario */
+    --background: #ffffff; /* Color de fondo */
+    --surface: #f9fafb; /* Color de superficie */
+    --border: #e5e7eb; /* Color de bordes */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Sombra básica */
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1); /* Sombra grande */
+    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Gradiente */
+}
+
+/* Estilos básicos del cuerpo de la página */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background);
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Estilos del encabezado */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+/* Navegación */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Marca de la navegación */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Icono de la marca */
+.nav-brand i {
+    font-size: 2rem;
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+/* Enlaces del menú */
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en enlaces */
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+/* Botón de menú móvil */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Líneas del botón de menú móvil */
+.nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-primary);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Logo de navegación */
+.nav-logo {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 2px 8px rgba(99,102,241,0.10);
+    background: #fff;
+    transition: height 0.2s, width 0.2s;
+}
+
+/* Sección Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 8rem 2rem 4rem;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenido del Hero */
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* Título del Hero */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+/* Texto resaltado */
+.highlight {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Subtítulo del Hero */
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Botón CTA */
+.cta-button {
+    display: inline-block;
+    background: var(--gradient);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en botón CTA */
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Sección visual del Hero */
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Iconos flotantes */
+.floating-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    font-size: 4rem;
+}
+
+/* Estilo de iconos flotantes */
+.floating-icons i {
+    color: var(--primary-color);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Retrasos en animación de iconos */
+.floating-icons i:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.floating-icons i:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.floating-icons i:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Sección del equipo */
+.team-section {
+    padding: 6rem 0;
+    background: var(--surface);
+}
+
+/* Título de sección */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Subtítulo de sección */
+.section-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* Contenedor del carrusel */
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Contenedor del carrusel */
+.carousel-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* Pista del carrusel */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Tarjeta de miembro */
+.member-card {
+    min-width: 100%;
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en tarjeta */
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Avatar del miembro */
+.member-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 auto 2rem auto;
+    background: var(--gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Nombre del miembro */
+.member-name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Rol del miembro */
+.member-role {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Biografía del miembro */
+.member-bio {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+/* Habilidades del miembro */
+.member-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Etiqueta de habilidad */
+.skill-tag {
+    background: var(--surface);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Botón de ver perfil */
+.view-profile-btn {
+    background: var(--gradient);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en botón de perfil */
+.view-profile-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Botones del carrusel */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en botones del carrusel */
+.carousel-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Botón anterior del carrusel */
+.prev-btn {
+    left: -25px;
+}
+
+/* Botón siguiente del carrusel */
+.next-btn {
+    right: -25px;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+/* Indicador individual */
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Indicador activo */
+.indicator.active {
+    background: var(--primary-color);
+}
+
+/* Pie de página */
+.footer {
+    background: var(--text-primary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* Contenido del pie de página */
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Marca del pie de página */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Icono del pie de página */
+.footer-brand i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* Enlaces sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Enlaces sociales individuales */
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en enlaces sociales */
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 6rem 1rem 4rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .floating-icons {
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    
+    .member-card {
+        padding: 2rem;
+    }
+    
+    .carousel-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .member-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Estilos para el título principal */
+.hero-title {
+    line-height: 1; /* Reduce el espacio entre líneas */
+    margin-bottom: 0.5rem; /* Menos espacio debajo del título */
+}
+
+.welcome-text {
+    display: block;
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: -0.5rem; /* Ajuste negativo para acercar a "BugsBaster" */
+}
+
+.highlight {
+    font-size: 3.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block; /* Fuerza salto de línea */
+    line-height: 1.1; /* Más compacto */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .welcome-text {
+        font-size: 1.8rem;
+        margin-bottom: -0.3rem;
+    }
+    .highlight {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-text {
+        font-size: 1.5rem;
+    }
+    .highlight {
+        font-size: 2.2rem;
+    }
+}

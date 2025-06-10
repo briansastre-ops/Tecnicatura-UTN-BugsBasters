@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugsBaster - Group Portfolio</title>
+    
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header class="header">
+        <!-- Barra de navegación -->
+        <nav class="nav">
+            <!-- Logo y nombre de la marca -->
+            <div class="nav-brand">
+                <i class="fas fa-bug"></i>
+                <span>BugsBaster</span>
+            </div>
+            <!-- Menú de navegación -->
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#projects">Projectos</a></li>
+                <li><a href="#contact">Contactanos</a></li>
+            </ul>
+            <!-- Botón de menú móvil -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Hero -->
+        <section id="home" class="hero">
+            <!-- Contenido del Hero -->
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="welcome-text">Bienvenidos a</span> 
+                    <span class="highlight">BugsBaster</span>
+                </h1>
+                <p class="hero-subtitle">Un equipo dedicado de desarrolladores apasionados por crear soluciones innovadoras y libres de errores.</p>
+                <a href="#team" class="cta-button">Conoce a nuestro equipo</a>
+            </div>
+            <!-- Elementos visuales del Hero -->
+            <div class="hero-visual">
+                <div class="floating-icons">
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-java"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-git-alt"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del Equipo -->
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2 class="section-title">Nuestro Equipo</h2>
+                <p class="section-subtitle">Conoce a los talentosos individuos detrás de BugsBaster</p>
+                
+                <!-- Carrusel de miembros del equipo -->
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Las tarjetas de miembros se insertarán dinámicamente aquí -->
+                        </div>
+                    </div>
+                    <!-- Botones de navegación del carrusel -->
+                    <button class="carousel-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <!-- Indicadores del carrusel -->
+                    <div class="carousel-indicators" id="carouselIndicators">
+                        <!-- Los indicadores se insertarán dinámicamente aquí -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Marca del pie de página -->
+                <div class="footer-brand">
+                    <i class="fas fa-bug"></i>
+                    <span>BugsBaster</span>
+                </div>
+                <p>Programando el futuro, línea a línea, sin errores que nos detengan.</p>
+                <!-- Enlaces a redes sociales -->
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

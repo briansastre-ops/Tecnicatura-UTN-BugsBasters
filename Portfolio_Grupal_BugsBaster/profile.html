@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Miembro - BugsBaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-bug"></i>
+                <span>BugsBaster</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#team">Equipo</a></li>
+                <li><a href="index.html#projects">Proyectos</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-header">
+            <div class="container">
+                <div class="profile-content">
+                    <div class="profile-avatar" id="profileAvatar">
+                        <!-- Avatar will be populated by JavaScript -->
+                    </div>
+                    <div class="profile-info">
+                        <h1 id="profileName">Loading...</h1>
+                        <p class="profile-role" id="profileRole">Loading...</p>
+                        <p id="profileBio">Loading...</p>
+                        <a href="index.html#team" class="back-btn">
+                            <i class="fas fa-arrow-left"></i>
+                            Volver al Equipo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="detail-section">
+                        <h3><i class="fas fa-code"></i> Habilidades Técnicas</h3>
+                        <div class="skills-list" id="skillsList">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3><i class="fas fa-briefcase"></i> Experiencia</h3>
+                        <p id="profileExperience">Loading...</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Educación</h3>
+                        <p id="profileEducation">Loading...</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3><i class="fas fa-project-diagram"></i> Proyectos Destacados</h3>
+                        <div id="projectsList">
+                            <!-- Projects will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-bug"></i>
+                    <span>BugsBaster</span>
+                </div>
+                <p>Construyendo el futuro, una solución libre de errores a la vez.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>
