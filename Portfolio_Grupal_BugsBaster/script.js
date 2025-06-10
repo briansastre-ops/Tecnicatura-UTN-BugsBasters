@@ -13,11 +13,11 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Lourdes Eschler",
+    name: "María Candelaria Ribotta",
     role: "Desarrolladora",
     bio: "Miembro del equipo BugsBaster",
     skills: ["Python", "JavaScript", "HTML", "CSS"],
-    avatar: "LE",
+    avatar: "MR",
     projects: [],
     experience: "Desarrolladora en formación",
     education: "Tecnicatura UTN"
@@ -35,17 +35,6 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "Cristian Rosas",
-    role: "Desarrollador",
-    bio: "Miembro del equipo BugsBaster",
-    skills: ["Python", "JavaScript", "HTML", "CSS"],
-    avatar: "CR",
-    projects: [],
-    experience: "Desarrollador en formación",
-    education: "Tecnicatura UTN"
-  },
-  {
-    id: 5,
     name: "Tomas Brachmann",
     role: "Desarrollador",
     bio: "Miembro del equipo BugsBaster",
@@ -56,34 +45,12 @@ const teamMembers = [
     education: "Tecnicatura UTN"
   },
   {
-    id: 6,
-    name: "Tobias Carbajal",
-    role: "Desarrollador",
-    bio: "Miembro del equipo BugsBaster",
-    skills: ["Python", "JavaScript", "HTML", "CSS"],
-    avatar: "TC",
-    projects: [],
-    experience: "Desarrollador en formación",
-    education: "Tecnicatura UTN"
-  },
-  {
-    id: 7,
-    name: "Darian Ravalle",
-    role: "Desarrollador",
-    bio: "Miembro del equipo BugsBaster",
-    skills: ["Python", "JavaScript", "HTML", "CSS"],
-    avatar: "DR",
-    projects: [],
-    experience: "Desarrollador en formación",
-    education: "Tecnicatura UTN"
-  },
-  {
-    id: 8,
-    name: "Candelaria Ribotta",
+    id: 5,
+    name: "Lourdes Eschler",
     role: "Desarrolladora",
     bio: "Miembro del equipo BugsBaster",
     skills: ["Python", "JavaScript", "HTML", "CSS"],
-    avatar: "CR",
+    avatar: "LE",
     projects: [],
     experience: "Desarrolladora en formación",
     education: "Tecnicatura UTN"

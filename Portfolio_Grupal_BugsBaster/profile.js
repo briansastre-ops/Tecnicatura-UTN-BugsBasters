@@ -120,51 +120,55 @@ Codo a Codo 4.0, Ciudad de Buenos Aires (Full Stack Python, Abril 2024 - Julio 2
   },
   {
     id: 4,
-    name: "Elena Díaz",
-    role: "Ingeniera DevOps",
-    bio: "Experta en DevOps enfocada en automatización, pipelines CI/CD e infraestructura en la nube. Especializada en Python para automatización.",
-    skills: ["Python", "Docker", "Jenkins", "AWS", "Automatización"],
-    avatar: "ED",
+    name: "Tomas Brachmann",
+    role: "Estudiante de Tecnicatura en Programación",
+    bio: "Tengo 19 años, me egresé de la escuela Republica del Perú en el año 2024. Actualmente estudio la Tecnicatura en Programación en la Universidad Tecnológica Nacional (UTN).",
+    skills: ["Pseint"],
+    softSkills: [
+      "Trabajo en equipo", "Aprendizaje continuo", "Responsabilidad", "Proactividad"
+    ],
+    avatar: "TB",
+    github: "tomi300-ng",
+    linkedin: "https://www.linkedin.com/in/tomas-brachmann-a59002319",
+    contact: "tomasbrachmann6@gmail.com",
     projects: [
       {
-        name: "Pipeline CI/CD",
-        description:
-          "Implementó pipeline de despliegue automatizado para múltiples proyectos, reduciendo el tiempo de despliegue en 80% y eliminando errores manuales a través de automatización integral de pruebas.",
-      },
-      {
-        name: "Infraestructura como Código",
-        description:
-          "Diseñó infraestructura en la nube usando herramientas de automatización, permitiendo despliegues consistentes y reproducibles en múltiples entornos con escalado y monitoreo automatizado.",
-      },
+        name: "Desarrollo de Aplicaciones",
+        description: "Participación en cursos y proyectos de desarrollo de aplicaciones, aplicando conocimientos de Pseint."
+      }
     ],
-    experience:
-      "4+ años en DevOps y computación en la nube, especializándose en automatización, gestión de infraestructura y monitoreo de rendimiento para aplicaciones empresariales.",
-    education:
-      "Licenciatura en Sistemas de Información de la Universidad Estatal, con certificaciones de AWS y Kubernetes.",
+    experience: "Formación académica en programación y desarrollo de aplicaciones.",
+    education: `Escuela Republica del Perú, Egresado 2024.\nTecnicatura en Programación, Universidad Tecnológica Nacional (UTN), En curso.`,
+    hardSkills: [
+      "Pseint", "Desarrollo de Aplicaciones"
+    ]
   },
   {
     id: 5,
-    name: "Carlos Mendoza",
-    role: "Desarrollador Frontend",
-    bio: "Especialista en desarrollo frontend con experiencia en crear interfaces de usuario modernas y responsivas usando HTML, CSS y JavaScript.",
-    skills: ["JavaScript", "HTML", "CSS", "React", "Vue.js"],
-    avatar: "CM",
+    name: "Lourdes Eschler",
+    role: "Estudiante de Tecnicatura en Programación",
+    bio: "Tengo 18 años, soy apasionada del diseño gráfico y me interesa complementarlo con el desarrollo de software. Egresada en 2024 de una secundaria de arte, donde aprendí fundamentos de diseño, composición visual y técnicas tradicionales y digitales. Actualmente soy estudiante de Programación de la Universidad Tecnológica Nacional.",
+    skills: [
+      "Diseño Gráfico", "Composición Visual", "Técnicas Digitales", "Programación"
+    ],
+    softSkills: [
+      "Creatividad", "Trabajo en equipo", "Aprendizaje continuo", "Adaptabilidad"
+    ],
+    avatar: "LE",
+    github: "Luu102",
+    linkedin: "www.linkedin.com/in/lourdes-eschler-b0bb9436a/",
+    contact: "lourdeseschler@gmail.com",
     projects: [
       {
-        name: "Aplicación de Fitness",
-        description:
-          "Desarrolló una app web de seguimiento de fitness con interfaz moderna, características sociales y recomendaciones personalizadas de ejercicios usando algoritmos de machine learning.",
-      },
-      {
-        name: "Plataforma Social",
-        description:
-          "Construyó una plataforma social móvil con características avanzadas de mensajería, notificaciones en tiempo real y capacidades de compartir multimedia sin problemas.",
-      },
+        name: "Diseño y Desarrollo",
+        description: "Combinación de habilidades en diseño gráfico con desarrollo de software, creando interfaces visualmente atractivas y funcionales."
+      }
     ],
-    experience:
-      "3+ años en desarrollo frontend, especializándose en soluciones multiplataforma y optimización de rendimiento para aplicaciones web modernas.",
-    education:
-      "Licenciatura en Desarrollo Web de la Universidad Digital, con certificaciones en desarrollo de interfaces de usuario modernas.",
+    experience: "Formación en diseño gráfico y composición visual, complementada con estudios en programación y desarrollo de software.",
+    education: `Secundaria de Arte, Egresada 2024.\nTecnicatura en Programación, Universidad Tecnológica Nacional (UTN), En curso.`,
+    hardSkills: [
+      "Diseño Gráfico", "Composición Visual", "Técnicas Digitales", "Programación"
+    ]
   }
 ]
 
