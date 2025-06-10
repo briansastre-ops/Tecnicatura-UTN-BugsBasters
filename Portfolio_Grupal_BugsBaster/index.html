@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugsBaster - Group Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+		<i class="fas fa-bug"></i>
+                <span>BugsBaster</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#projects">Projectos</a></li>
+                <li><a href="#contact">Contactanos</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">Bienvenido a <span class="highlight">BugsBaster</span></h1>
+                <p class="hero-subtitle">Un equipo dedicado de desarrolladores apasionados por crear soluciones innovadoras y libres de errores.</p>
+                <a href="#team" class="cta-button">Conoce a nuestro equipo</a>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-icons">
+                    <i class="fab fa-python"></i>     <!-- Python -->
+                    <i class="fab fa-java"></i>       <!-- Java -->
+                    <i class="fab fa-css3-alt"></i>   <!-- CSS -->
+                    <i class="fab fa-js-square"></i>  <!-- JavaScript -->
+                    <i class="fab fa-html5"></i>      <!-- HTML -->
+                    <i class="fab fa-git-alt"></i>    <!-- Git -->
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2 class="section-title">Nuestro Equipo</h2>
+                <p class="section-subtitle">Conoce a los talentosos individuos detrás de BugsBaster</p>
+                
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Member cards will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-indicators" id="carouselIndicators">
+                        <!-- Indicators will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-bug"></i>
+                    <span>BugsBaster</span>
+                </div>
+                <p>Programando el futuro, línea a línea, sin errores que nos detengan.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
