@@ -1,15 +1,15 @@
-// Datos de miembros
+// Array que contiene la información de todos los miembros del equipo
 const teamMembers = [
   {
-    id: 1,
-    name: "Brian Sastre",
-    role: "Desarrollador",
-    bio: "Miembro del equipo BugsBaster",
-    skills: ["Python", "JavaScript", "HTML", "CSS"],
-    avatar: "BS",
-    projects: [],
-    experience: "Desarrollador en formación",
-    education: "Tecnicatura UTN"
+    id: 1, // Identificador único del miembro
+    name: "Brian Sastre", // Nombre completo del miembro
+    role: "Desarrollador", // Rol o cargo en el equipo
+    bio: "Miembro del equipo BugsBaster", // Breve descripción del miembro
+    skills: ["Python", "JavaScript", "HTML", "CSS"], // Array de habilidades técnicas
+    avatar: "BS", // Iniciales para el avatar
+    projects: [], // Array para proyectos (actualmente vacío)
+    experience: "Desarrollador en formación", // Experiencia laboral
+    education: "Tecnicatura UTN" // Formación académica
   },
   {
     id: 2,

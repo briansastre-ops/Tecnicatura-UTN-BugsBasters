@@ -1,23 +1,26 @@
+/* Reset básico para todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Variables globales de colores y estilos */
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
-    --accent-color: #06b6d4;
-    --text-primary: #1f2937;
-    --text-secondary: #6b7280;
-    --background: #ffffff;
-    --surface: #f9fafb;
-    --border: #e5e7eb;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --primary-color: #6366f1; /* Color primario */
+    --secondary-color: #8b5cf6; /* Color secundario */
+    --accent-color: #06b6d4; /* Color de acento */
+    --text-primary: #1f2937; /* Color de texto principal */
+    --text-secondary: #6b7280; /* Color de texto secundario */
+    --background: #ffffff; /* Color de fondo */
+    --surface: #f9fafb; /* Color de superficie */
+    --border: #e5e7eb; /* Color de bordes */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Sombra básica */
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1); /* Sombra grande */
+    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Gradiente */
 }
 
+/* Estilos básicos del cuerpo de la página */
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -25,13 +28,14 @@ body {
     background-color: var(--background);
 }
 
+/* Contenedor principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* Header */
+/* Estilos del encabezado */
 .header {
     position: fixed;
     top: 0;
@@ -42,6 +46,7 @@ body {
     box-shadow: var(--shadow);
 }
 
+/* Navegación */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -51,6 +56,7 @@ body {
     margin: 0 auto;
 }
 
+/* Marca de la navegación */
 .nav-brand {
     display: flex;
     align-items: center;
@@ -60,16 +66,19 @@ body {
     color: var(--primary-color);
 }
 
+/* Icono de la marca */
 .nav-brand i {
     font-size: 2rem;
 }
 
+/* Menú de navegación */
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
+/* Enlaces del menú */
 .nav-menu a {
     text-decoration: none;
     color: var(--text-primary);
@@ -77,16 +86,19 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Efecto hover en enlaces */
 .nav-menu a:hover {
     color: var(--primary-color);
 }
 
+/* Botón de menú móvil */
 .nav-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
 
+/* Líneas del botón de menú móvil */
 .nav-toggle span {
     width: 25px;
     height: 3px;
@@ -95,6 +107,7 @@ body {
     transition: 0.3s;
 }
 
+/* Logo de navegación */
 .nav-logo {
     height: 48px;
     width: 48px;
@@ -106,7 +119,7 @@ body {
     transition: height 0.2s, width 0.2s;
 }
 
-/* Hero Section */
+/* Sección Hero */
 .hero {
     display: flex;
     align-items: center;
@@ -117,11 +130,13 @@ body {
     overflow: hidden;
 }
 
+/* Contenido del Hero */
 .hero-content {
     flex: 1;
     max-width: 600px;
 }
 
+/* Título del Hero */
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
@@ -129,6 +144,7 @@ body {
     line-height: 1.2;
 }
 
+/* Texto resaltado */
 .highlight {
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -136,12 +152,14 @@ body {
     background-clip: text;
 }
 
+/* Subtítulo del Hero */
 .hero-subtitle {
     font-size: 1.25rem;
     color: var(--text-secondary);
     margin-bottom: 2rem;
 }
 
+/* Botón CTA */
 .cta-button {
     display: inline-block;
     background: var(--gradient);
@@ -153,11 +171,13 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efecto hover en botón CTA */
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
+/* Sección visual del Hero */
 .hero-visual {
     flex: 1;
     display: flex;
@@ -165,6 +185,7 @@ body {
     align-items: center;
 }
 
+/* Iconos flotantes */
 .floating-icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -172,11 +193,13 @@ body {
     font-size: 4rem;
 }
 
+/* Estilo de iconos flotantes */
 .floating-icons i {
     color: var(--primary-color);
     animation: float 3s ease-in-out infinite;
 }
 
+/* Retrasos en animación de iconos */
 .floating-icons i:nth-child(2) {
     animation-delay: 0.5s;
 }
@@ -189,17 +212,19 @@ body {
     animation-delay: 1.5s;
 }
 
+/* Animación de flotación */
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
 }
 
-/* Team Section */
+/* Sección del equipo */
 .team-section {
     padding: 6rem 0;
     background: var(--surface);
 }
 
+/* Título de sección */
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -207,6 +232,7 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Subtítulo de sección */
 .section-subtitle {
     font-size: 1.125rem;
     color: var(--text-secondary);
@@ -214,23 +240,26 @@ body {
     margin-bottom: 4rem;
 }
 
-/* Carousel */
+/* Contenedor del carrusel */
 .carousel-container {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/* Contenedor del carrusel */
 .carousel-wrapper {
     overflow: hidden;
     border-radius: 20px;
 }
 
+/* Pista del carrusel */
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease;
 }
 
+/* Tarjeta de miembro */
 .member-card {
     min-width: 100%;
     background: white;
@@ -242,10 +271,12 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Efecto hover en tarjeta */
 .member-card:hover {
     transform: translateY(-5px);
 }
 
+/* Avatar del miembro */
 .member-avatar {
     width: 160px;
     height: 160px;
@@ -260,12 +291,14 @@ body {
     font-weight: 700;
 }
 
+/* Nombre del miembro */
 .member-name {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
+/* Rol del miembro */
 .member-role {
     font-size: 1.125rem;
     color: var(--primary-color);
@@ -273,12 +306,14 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Biografía del miembro */
 .member-bio {
     color: var(--text-secondary);
     margin-bottom: 2rem;
     line-height: 1.7;
 }
 
+/* Habilidades del miembro */
 .member-skills {
     display: flex;
     flex-wrap: wrap;
@@ -287,6 +322,7 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Etiqueta de habilidad */
 .skill-tag {
     background: var(--surface);
     color: var(--text-primary);
@@ -296,6 +332,7 @@ body {
     font-weight: 500;
 }
 
+/* Botón de ver perfil */
 .view-profile-btn {
     background: var(--gradient);
     color: white;
@@ -307,10 +344,12 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Efecto hover en botón de perfil */
 .view-profile-btn:hover {
     transform: translateY(-2px);
 }
 
+/* Botones del carrusel */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -327,19 +366,23 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Efecto hover en botones del carrusel */
 .carousel-btn:hover {
     background: var(--primary-color);
     color: white;
 }
 
+/* Botón anterior del carrusel */
 .prev-btn {
     left: -25px;
 }
 
+/* Botón siguiente del carrusel */
 .next-btn {
     right: -25px;
 }
 
+/* Indicadores del carrusel */
 .carousel-indicators {
     display: flex;
     justify-content: center;
@@ -347,6 +390,7 @@ body {
     margin-top: 2rem;
 }
 
+/* Indicador individual */
 .indicator {
     width: 12px;
     height: 12px;
@@ -356,42 +400,12 @@ body {
     transition: background 0.3s ease;
 }
 
+/* Indicador activo */
 .indicator.active {
     background: var(--primary-color);
 }
 
-/* Projects Section */
-.projects-section {
-    padding: 6rem 0;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.project-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-/* Footer */
+/* Pie de página */
 .footer {
     background: var(--text-primary);
     color: white;
@@ -399,11 +413,13 @@ body {
     text-align: center;
 }
 
+/* Contenido del pie de página */
 .footer-content {
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Marca del pie de página */
 .footer-brand {
     display: flex;
     align-items: center;
@@ -414,11 +430,13 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Icono del pie de página */
 .footer-brand i {
     font-size: 2rem;
     color: var(--primary-color);
 }
 
+/* Enlaces sociales */
 .social-links {
     display: flex;
     justify-content: center;
@@ -426,155 +444,19 @@ body {
     margin-top: 2rem;
 }
 
+/* Enlaces sociales individuales */
 .social-links a {
     color: white;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
+/* Efecto hover en enlaces sociales */
 .social-links a:hover {
     color: var(--primary-color);
 }
 
-/* Member Profile Page Styles */
-.profile-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 1rem 3rem;
-    text-align: center;
-    background: var(--gradient);
-    color: white;
-    margin-top: 80px;
-    width: 100%;
-}
-
-.profile-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.profile-avatar {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    margin: 0 auto 2rem auto;
-    background: var(--gradient);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-    color: #fff;
-    font-weight: 700;
-}
-
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.profile-info h1,
-.profile-info .profile-role,
-.profile-info p {
-    text-align: center;
-    width: 100%;
-}
-
-.profile-back-btn, .back-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.back-btn, .profile-back-btn {
-    margin-top: 24px;
-    padding: 12px 32px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.25);
-    color: white;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.2s, color 0.2s;
-    display: inline-block;
-    box-shadow: var(--shadow);
-}
-.back-btn:hover, .profile-back-btn:hover {
-    background: rgba(255, 255, 255, 0.4);
-    color: var(--primary-color);
-}
-
-.profile-info h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-.profile-role {
-    font-size: 1.5rem;
-    opacity: 0.9;
-    margin-bottom: 1rem;
-}
-
-.profile-details {
-    padding: 4rem 0;
-}
-
-.details-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-}
-
-.detail-section {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-}
-
-.detail-section h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.project-item {
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.project-item:last-child {
-    border-bottom: none;
-}
-
-.project-item h4 {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.project-item p {
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-}
-
-/* Responsive Design */
+/* Media queries para responsividad */
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
@@ -606,27 +488,6 @@ body {
     .carousel-btn {
         display: none;
     }
-    
-    .profile-header {
-        padding: 2.5rem 0.5rem 2rem;
-    }
-    .profile-content {
-        padding: 0;
-    }
-    .member-avatar {
-        width: 100px;
-        height: 100px;
-        font-size: 2rem;
-        margin-bottom: 16px;
-    }
-    .profile-info h1 {
-        font-size: 1.5rem;
-    }
-    .back-btn, .profile-back-btn {
-        padding: 10px 20px;
-        font-size: 0.95rem;
-        margin-top: 16px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -644,28 +505,6 @@ body {
     
     .member-card {
         padding: 1.5rem;
-    }
-    
-    .member-avatar {
-        width: 70px;
-        height: 70px;
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-    }
-    
-    .profile-header {
-        padding: 1.5rem 0.25rem 1rem;
-    }
-    .profile-avatar {
-        width: 70px;
-        height: 70px;
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-    }
-    .back-btn, .profile-back-btn {
-        padding: 8px 14px;
-        font-size: 0.9rem;
-        margin-top: 10px;
     }
 }
 
