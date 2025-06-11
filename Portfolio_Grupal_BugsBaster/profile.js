@@ -169,6 +169,61 @@ Codo a Codo 4.0, Ciudad de Buenos Aires (Full Stack Python, Abril 2024 - Julio 2
     hardSkills: [
       "Diseño Gráfico", "Composición Visual", "Técnicas Digitales", "Programación"
     ]
+  },
+  {
+    id: 6,
+    name: "Cristian Fernando Rosas",
+    role: "Estudiante de Tecnicatura en Programación",
+    bio: "Tengo 28 años, egresado de la escuela Margarita Cinca de Geary en el año 2014. Actualmente soy estudiante de la carrera de Tecnicatura en Programación en la Universidad Tecnológica Nacional (UTN). Apasionado por el desarrollo de software y la tecnología.",
+    skills: [
+      "Python", "JavaScript", "HTML", "CSS", "Git"
+    ],
+    softSkills: [
+      "Trabajo en equipo", "Aprendizaje continuo", "Responsabilidad", "Proactividad"
+    ],
+    avatar: "CR",
+    github: "cristianf09rosas",
+    linkedin: "www.linkedin.com/in/cristian-rosas-547b10258",
+    contact: "crfero96@gmail.com",
+    projects: [
+      {
+        name: "Desarrollo Web",
+        description: "Participación en proyectos de desarrollo web, aplicando conocimientos en HTML, CSS y JavaScript."
+      }
+    ],
+    experience: "Formación académica en programación y desarrollo de software.",
+    education: `Escuela Margarita Cinca de Geary, Egresado 2014.
+Tecnicatura en Programación, Universidad Tecnológica Nacional (UTN), En curso.`,
+    hardSkills: [
+      "Python", "JavaScript", "HTML", "CSS", "Git", "Desarrollo Web"
+    ]
+  },
+  {
+    id: 7,
+    name: "Lucas Rios",
+    role: "Estudiante de Tecnicatura en Programación | Desarrollador Frontend",
+    bio: "Tengo 28 años y soy estudiante en desarrollo web con conocimientos en tecnologías del ecosistema frontend. Actualmente estudio la Tecnicatura en Programación en la Universidad Tecnológica Nacional (UTN). Estoy en constante aprendizaje, siempre buscando nuevas herramientas y buenas prácticas para mejorar mis proyectos.",
+    skills: [
+      "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Bootstrap", "Ionic", "Git"
+    ],
+    softSkills: [
+      "Aprendizaje continuo", "Trabajo en equipo", "Proactividad", "Adaptabilidad"
+    ],
+    avatar: "LR",
+    linkedin: "linkedin.com/in/lucas-rios-722938118",
+    contact: "rioslucas97@gmail.com",
+    projects: [
+      {
+        name: "Desarrollo Frontend",
+        description: "Desarrollo de aplicaciones web utilizando tecnologías modernas del ecosistema frontend como Angular, TypeScript y Bootstrap."
+      }
+    ],
+    experience: "Formación y práctica en desarrollo web frontend, con enfoque en aplicaciones modernas y responsivas.",
+    education: `Tecnicatura en Programación, Universidad Tecnológica Nacional (UTN), En curso.`,
+    hardSkills: [
+      "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Bootstrap", "Ionic", "Git",
+      "Desarrollo Frontend", "Desarrollo Web Responsive"
+    ]
   }
 ]
 
