@@ -54,6 +54,28 @@ const teamMembers = [
     projects: [],
     experience: "Desarrolladora en formación",
     education: "Tecnicatura UTN"
+  },
+  {
+    id: 6,
+    name: "Cristian Fernando Rosas",
+    role: "Desarrollador",
+    bio: "Miembro del equipo BugsBaster",
+    skills: ["Python", "JavaScript", "HTML", "CSS", "Git"],
+    avatar: "CR",
+    projects: [],
+    experience: "Desarrollador en formación",
+    education: "Tecnicatura UTN"
+  },
+  {
+    id: 7,
+    name: "Lucas Rios",
+    role: "Desarrollador Frontend",
+    bio: "Miembro del equipo BugsBaster",
+    skills: ["HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Bootstrap", "Ionic", "Git"],
+    avatar: "LR",
+    projects: [],
+    experience: "Desarrollador en formación",
+    education: "Tecnicatura UTN"
   }
 ];
 
