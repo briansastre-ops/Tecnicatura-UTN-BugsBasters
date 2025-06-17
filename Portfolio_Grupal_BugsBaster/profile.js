@@ -28,37 +28,7 @@ const teamMembers = [
       }
     ],
     experience: "Formación profesional y práctica en desarrollo web, especializado en Front-End y aplicaciones responsive con énfasis en React y TypeScript.",
-    education: `Escuela Técnica N° 2 Francisco Ramírez, Concepción del Uruguay (Técnico Electromecánico, Marzo 2014 - Diciembre 2022)
-Codo a Codo 4.0, Ciudad de Buenos Aires (Full Stack Python, Abril 2024 - Julio 2024)`,
-    hardSkills: [
-      "Curso Profesional Desarrollo Web",
-      "Curso de CSS",
-      "Curso Profesional de JavaScript",
-      "Curso de JavaScript y el DOM",
-      "Curso de Controles y Efectos Frontend",
-      "Curso Profesional de React (Legado)",
-      "Curso de Accesibilidad Web",
-      "Estilos en React - Bootcamp de React g2",
-      "React en Producción - Bootcamp de React g2",
-      "Curso de Manejo de Estado en React",
-      "Curso de Unit Testing en React",
-      "Curso para Crear Single Page Applications con React",
-      "Curso de React con TypeScript",
-      "Taller de Introducción a Next.js",
-      "JavaScript Moderno y Programación Funcional - Bootcamp de React",
-      "Fundamentos de JavaScript - Bootcamp de React g2",
-      "Qué Hace Realmente un Frontend - Bootcamp Frontend",
-      "Fundamentos del Lenguaje - Bootcamp de JavaScript",
-      "Fundamentos de HTML y CSS - Bootcamp de Frontend",
-      "Curso de React con Ejercicios Prácticos",
-      "Programación Asíncrona - Bootcamp de JavaScript",
-      "Sintaxis Moderna del Lenguaje - Bootcamp de JavaScript",
-      "Manejo del DOM - Bootcamp de JavaScript",
-      "Eventos - Bootcamp de JavaScript",
-      "Web APIs Fundamentales - Bootcamp de JavaScript",
-      "Formularios y Validaciones - Bootcamp de JavaScript"
-    ],
-    contact: "briansastre-portfolio.vercel.app"
+    education: "Escuela Técnica N° 2 Francisco Ramírez - Técnico Electromecánico\nTecnicatura en Programación, Universidad Tecnológica Nacional (UTN), En curso."
   },
   {
     id: 2,
@@ -155,6 +125,7 @@ Codo a Codo 4.0, Ciudad de Buenos Aires (Full Stack Python, Abril 2024 - Julio 2
       "Creatividad", "Trabajo en equipo", "Aprendizaje continuo", "Adaptabilidad"
     ],
     avatar: "LE",
+    portfolio: "https://portafolio-chi-brown.vercel.app/",
     github: "Luu102",
     linkedin: "www.linkedin.com/in/lourdes-eschler-b0bb9436a/",
     contact: "lourdeseschler@gmail.com",
@@ -266,6 +237,17 @@ function loadMemberProfile() {
   `,
     )
     .join("")
+
+  // Agregar botón de portafolio si existe
+  if (member.portfolio) {
+    const profileInfo = document.querySelector('.profile-info')
+    const portfolioBtn = document.createElement('a')
+    portfolioBtn.href = member.portfolio
+    portfolioBtn.target = '_blank'
+    portfolioBtn.className = 'portfolio-btn'
+    portfolioBtn.innerHTML = '<i class="fas fa-external-link-alt"></i> Ver Portafolio Personal'
+    profileInfo.appendChild(portfolioBtn)
+  }
 
   // Actualizar título de la página
   document.title = `${member.name} - Portafolio BugsBaster`
