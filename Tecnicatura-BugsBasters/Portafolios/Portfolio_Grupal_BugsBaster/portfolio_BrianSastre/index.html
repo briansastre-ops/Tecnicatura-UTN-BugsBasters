@@ -1,69 +1,78 @@
+<!-- Declaración del tipo de documento HTML -->
 <!DOCTYPE html>
+<!-- Inicio del documento HTML, idioma español -->
 <html lang="es">
+<!-- Inicio del head, contiene metadatos y enlaces de recursos -->
 <head>
+    <!-- Configuración de codificación de caracteres -->
     <meta charset="UTF-8">
+    <!-- Configuración de la vista para dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la pestaña del navegador -->
     <title>Portafolio - Técnico Electromecánico & Front-End Developer</title>
+    <!-- Enlace a la hoja de estilos principal -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a los iconos de Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+<!-- Inicio del cuerpo del documento -->
 <body>
-    <!-- Navbar -->
+    <!-- Navbar: barra de navegación superior -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">Portfolio</span>
+                <span class="logo-text">Portfolio</span> <!-- Logo del portafolio -->
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#inicio" class="nav-link">Inicio</a>
-                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
-                <a href="#habilidades" class="nav-link">Habilidades</a>
-                <a href="#proyectos" class="nav-link">Proyectos</a>
-                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="#inicio" class="nav-link">Inicio</a> <!-- Enlace a la sección Inicio -->
+                <a href="#sobre-mi" class="nav-link">Sobre Mí</a> <!-- Enlace a la sección Sobre Mí -->
+                <a href="#habilidades" class="nav-link">Habilidades</a> <!-- Enlace a la sección Habilidades -->
+                <a href="#proyectos" class="nav-link">Proyectos</a> <!-- Enlace a la sección Proyectos -->
+                <a href="#contacto" class="nav-link">Contacto</a> <!-- Enlace a la sección Contacto -->
             </div>
             <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar"></span> <!-- Barra del menú hamburguesa -->
+                <span class="bar"></span> <!-- Barra del menú hamburguesa -->
+                <span class="bar"></span> <!-- Barra del menú hamburguesa -->
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Sección principal (Hero) -->
     <section id="inicio" class="hero">
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="gradient-text">Técnico Electromecánico</span>
-                    <br>& Front-End Developer
+                    <span class="gradient-text">Técnico Electromecánico</span> <!-- Título principal con gradiente -->
+                    <br>& Front-End Developer <!-- Subtítulo -->
                 </h1>
                 <p class="hero-description">
                     Profesional proactivo y creativo con sólida formación en programación y un fuerte interés en el desarrollo web. 
                     Especializado en React, TypeScript y tecnologías modernas.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a> <!-- Botón para ver proyectos -->
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a> <!-- Botón para contactar -->
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="tech-grid">
-                    <div class="tech-item">{'<>'}</div>
-                    <div class="tech-item">React</div>
-                    <div class="tech-item">TS</div>
-                    <div class="tech-item">JS</div>
+                    <div class="tech-item">{'<>'}</div> <!-- Ícono de código -->
+                    <div class="tech-item">React</div> <!-- Ícono de React -->
+                    <div class="tech-item">TS</div> <!-- Ícono de TypeScript -->
+                    <div class="tech-item">JS</div> <!-- Ícono de JavaScript -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Mí -->
+    <!-- Sección Sobre Mí -->
     <section id="sobre-mi" class="about">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
+            <h2 class="section-title">Sobre Mí</h2> <!-- Título de la sección -->
             <div class="about-content">
                 <div class="about-text">
-                    <h3 style="color: var(--accent-primary); margin-bottom: 0.5rem;">Brian Sastre</h3>
+                    <h3 style="color: var(--accent-primary); margin-bottom: 0.5rem;">Brian Sastre</h3> <!-- Nombre destacado -->
                     <p>
                         Soy Técnico Electromecánico con un fuerte interés en el Front-End y una sólida formación en programación. 
                         Mi experiencia académica en la <strong>Escuela Técnica N° 2 Francisco Ramírez</strong> y mi continuo compromiso 
@@ -77,15 +86,15 @@
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
-                        <div class="stat-number">10+</div>
+                        <div class="stat-number">10+</div> <!-- Número de tecnologías -->
                         <div class="stat-label">Tecnologías</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">3+</div>
+                        <div class="stat-number">3+</div> <!-- Número de proyectos -->
                         <div class="stat-label">Proyectos</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">100%</div>
+                        <div class="stat-number">100%</div> <!-- Porcentaje de dedicación -->
                         <div class="stat-label">Dedicación</div>
                     </div>
                 </div>
@@ -93,61 +102,61 @@
         </div>
     </section>
 
-    <!-- Habilidades -->
+    <!-- Sección de Habilidades Técnicas -->
     <section id="habilidades" class="skills">
         <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
+            <h2 class="section-title">Habilidades Técnicas</h2> <!-- Título de la sección -->
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3>Frontend</h3> <!-- Categoría Frontend -->
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-react"></i>
+                            <i class="fab fa-react"></i> <!-- Ícono de React -->
                             <span>React</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-js-square"></i> <!-- Ícono de TypeScript -->
                             <span>TypeScript</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-html5"></i> <!-- Ícono de HTML -->
                             <span>HTML</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-css3-alt"></i> <!-- Ícono de CSS -->
                             <span>CSS</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-js"></i>
+                            <i class="fab fa-js"></i> <!-- Ícono de JavaScript -->
                             <span>JavaScript</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-code"></i> <!-- Ícono de Next.js -->
                             <span>Next.js</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Backend & Otros</h3>
+                    <h3>Backend & Otros</h3> <!-- Categoría Backend y otros -->
                     <div class="skill-items">
                         <div class="skill-item">
-                            <i class="fab fa-python"></i>
+                            <i class="fab fa-python"></i> <!-- Ícono de Python -->
                             <span>Python</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-flask"></i>
+                            <i class="fas fa-flask"></i> <!-- Ícono de Flask -->
                             <span>Flask</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-database"></i>
+                            <i class="fas fa-database"></i> <!-- Ícono de SQL -->
                             <span>SQL</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-universal-access"></i>
+                            <i class="fas fa-universal-access"></i> <!-- Ícono de Accesibilidad -->
                             <span>Accesibilidad Web</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-vial"></i>
+                            <i class="fas fa-vial"></i> <!-- Ícono de Unit Testing -->
                             <span>Unit Testing</span>
                         </div>
                     </div>
@@ -156,14 +165,15 @@
         </div>
     </section>
 
-    <!-- Proyectos -->
+    <!-- Sección de Proyectos Destacados -->
     <section id="proyectos" class="projects">
         <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
+            <h2 class="section-title">Proyectos Destacados</h2> <!-- Título de la sección -->
             <div class="projects-grid">
+                <!-- Proyecto Travel App -->
                 <div class="project-card">
                     <div class="project-header">
-                        <i class="fas fa-map-marked-alt"></i>
+                        <i class="fas fa-map-marked-alt"></i> <!-- Ícono de mapa -->
                         <h3>Travel App</h3>
                     </div>
                     <p class="project-description">
@@ -186,10 +196,10 @@
                         </a>
                     </div>
                 </div>
-
+                <!-- Proyecto Pizzería CAC -->
                 <div class="project-card">
                     <div class="project-header">
-                        <i class="fas fa-pizza-slice"></i>
+                        <i class="fas fa-pizza-slice"></i> <!-- Ícono de pizza -->
                         <h3>Pizzería CAC</h3>
                     </div>
                     <p class="project-description">
@@ -212,10 +222,10 @@
                         </a>
                     </div>
                 </div>
-
+                <!-- Proyecto Obsidian SaaS -->
                 <div class="project-card">
                     <div class="project-header">
-                        <i class="fas fa-boxes"></i>
+                        <i class="fas fa-boxes"></i> <!-- Ícono de cajas -->
                         <h3>Obsidian SaaS</h3>
                     </div>
                     <p class="project-description">
@@ -241,13 +251,13 @@
         </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- Sección de Contacto -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <h2 class="section-title">Contacto</h2> <!-- Título de la sección -->
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>¡Hablemos!</h3>
+                    <h3>¡Hablemos!</h3> <!-- Subtítulo de contacto -->
                     <p>Estoy disponible para nuevas oportunidades y colaboraciones. No dudes en contactarme.</p>
                     <div class="contact-methods">
                         <div class="contact-method">
@@ -266,28 +276,28 @@
                 </div>
                 <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="text" placeholder="Tu nombre" required> <!-- Campo para el nombre -->
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Tu email" required>
+                        <input type="email" placeholder="Tu email" required> <!-- Campo para el email -->
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        <textarea placeholder="Tu mensaje" rows="5" required></textarea> <!-- Campo para el mensaje -->
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button> <!-- Botón de envío -->
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Pie de página (Footer) -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Portafolio. Desarrollado con pasión y tecnología por brian sastre .</p>
+            <p>&copy; 2025 Portafolio. Desarrollado con pasión y tecnología por brian sastre .</p> <!-- Texto de copyright -->
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <!-- Enlace al archivo de scripts JS -->
+    <script src="script.js"></script>
 </body>
-</html>
-    
+</html> 
