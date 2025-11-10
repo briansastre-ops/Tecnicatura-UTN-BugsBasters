@@ -69,10 +69,10 @@ const teamMembers = [
       "Trabajo en equipo", "Aprendizaje continuo", "Responsabilidad", "Proactividad"
     ],
     avatar: "TC",
-    github: "",
-    linkedin: "",
+    github: "https://github.com/tobiascarbajal",
+    linkedin: "no",
     contact: "Tobycarbajal43@gmail.com",
-    projects: [
+    projects: [ "https://mi-portfolio-five-rho.vercel.app/"
       {
         name: "Desarrollo de Aplicaciones",
         description: "Participación en cursos y proyectos de desarrollo de aplicaciones, aplicando conocimientos de Java y Python."
